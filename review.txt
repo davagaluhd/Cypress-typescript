@@ -1,0 +1,17 @@
+Test case 1: 'Test LOGIN'
+Code yang ditunjukkan untuk melakukan pengujian dalam scenario login menggunakan valid data
+yaitu username = "standard_user" dan password = "secret_sauce". Setelah berhasil melakukan login,
+dilanjutkan dengan pengujian assertLogin() pada teks "Product" yang berada di judul header yang memiliki
+element ('.title') dan ('.peek').
+
+Test case 2: 'Test Sauce Demo Invalid Password'
+Code yang ditunjukkan untuk melakukan pengujian dalam scenario login menggunakan invalid data password
+yaitu username = "standard_user" dan password = "invalidPass". Dilanjutkan dengan pengujian assertLoginFail()
+pada element [data-test="error"] yaitu tampilan yang dihasilkan jika gagal dalam melakukan login.
+
+Test case 3: 'Test Sauce Demo Sauce labs product backpack'
+Code yang ditunjukkan untuk melakukan pengujian dalam scenario melihat product "Sauce Labs Backpack". Dimulai dengan
+melakukan login dengan valid data yaitu username = "standard_user" dan password = "secret_sauce" kemudian dilanjut
+dengan pengujian assertLogin(). Setelah itu dilakukan pengujian pada sauceLabsBackpack() pada dashboard yaitu
+klik tautan pada teks "Sauce Labs Backpack" dan dilanjut pengujian teks "Sauce Labs Backpack" yang seharusnya berada
+pada halaman produk yang ditampilkan.
